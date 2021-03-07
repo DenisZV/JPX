@@ -7,7 +7,7 @@ if len(sys.argv) >= 2:
 
   client = TelegramClient('pantini', api_id, api_hash)
 
-  @client.on(events.NewMessage("https://t.me/pantini_fly"))
+  @client.on(events.NewMessage("https://t.me/pantini_spbex_news"))
   async def new_message_event_handler(event):
     if event.message.buttons is not None:
       await event.message.click(0, 1)
